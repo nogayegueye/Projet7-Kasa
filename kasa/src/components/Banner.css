@@ -1,0 +1,21 @@
+.Banner{
+    position: relative;
+    height: 223px;
+    border-radius: 25px;
+    background-image: url('../bannerImg.png');
+    display: grid;
+    place-items: center;
+    margin: auto;
+    color: white;
+    font-weight: 700;
+    font-size: 48px;
+    background-position: center;
+    background-size: cover ;
+
+   }
+ .Banner::before{
+    position: absolute;
+    content: "";
+    inset: 0;
+    opacity: 0.3 ;
+ }  

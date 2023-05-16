@@ -1,22 +1,8 @@
-.App{
+body{
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   font-family: 'Montserrat', sans-serif;
 }
-.navbar{
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
-  padding: 10px;
-  color: #FF6060;
-  font-weight: 700;
 
 
-}
-.banner{
- max-width:1240px ;
- height: 223px;
- border-radius: 25px;
-
-}
 

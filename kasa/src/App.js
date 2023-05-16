@@ -1,13 +1,19 @@
 import React from "react";
-// import Navbar "./components/Navbar.jsx";
-// import footer from "./footer.png";
-// import bannerImg from "./bannerImg.png";
+import Navbar from "./components/Navbar.js";
+import Banner from "./components/Banner.js";
+import AppartementGrid from "./components/AppartementGrid.js";
+import Footer from "./components/Footer.js";
+
+
 import "./App.css";
 
 function App() {
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
+      <Banner />
+      <AppartementGrid />
+      <Footer />
     </div>
   );
 }

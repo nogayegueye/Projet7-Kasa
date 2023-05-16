@@ -1,15 +1,12 @@
 import React from 'react'
+import './Banner.css';
 
-function banner() {
+function Banner() {
   return (
-    <nav className="navbar">
-      <div className="navbar.logo">
-      <img src={logo} alt="logo" />
+    <div className='Banner'>
+      <p>Chez vous, partout et ailleurs</p>
       </div>
-      <div>Accueil</div>
-      <div>A propos</div>
-      </nav>
   )
 }
 
-export default banner
+export default Banner

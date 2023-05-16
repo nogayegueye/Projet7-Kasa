@@ -1,0 +1,15 @@
+.Navbar{
+    display: flex; 
+    align-items: center;
+    padding: 10px;
+    color: #FF6060;
+    font-weight: 700;
+    margin: 20px 0;
+    gap: 6 0px;
+  
+  }
+  
+  .Navbar-logo{
+    margin-right: auto;
+    
+  }
