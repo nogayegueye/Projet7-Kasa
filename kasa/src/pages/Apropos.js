@@ -1,8 +1,13 @@
 import React from 'react'
+import Banner from '../components/Banner.js'
+
 
 function Apropos() {
   return (
-    <div>Apropos</div>
+    <div>
+       <Banner/>
+       
+    </div>
   )
 }
 

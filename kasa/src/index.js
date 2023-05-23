@@ -5,17 +5,21 @@ import App from './App';
 import Apropos from './pages/Apropos';
 import PageApp from './pages/PageApp';
 import PageErreure from './pages/PageErreure.js';
+import Navbar from './components/Navbar.js';
+import Footer from './components/Footer.js';
 
 const rootElement = document.getElementById('root');
 ReactDOM.createRoot(rootElement).render(
       <React.StrictMode>
             <Router>
+                  <Navbar />
                   <Routes>
                         <Route path="/" element={<App />} />
                         <Route path="/PageApp" element={<PageApp />} />
                         <Route path="/Apropos" element={<Apropos />} />
                         <Route path="*" element={<PageErreure />} />
                   </Routes>
+                  <Footer />
             </Router>
       </React.StrictMode>
 );

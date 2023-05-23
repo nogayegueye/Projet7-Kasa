@@ -3,9 +3,13 @@
       align-items: center;
       padding: 10px;
       color: #ff6060;
-      font-weight: 400;
+      font-weight: 500;
       margin: 20px 0;
       gap: 100px;
+      @media screen and (width <= 768px){
+            text-transform: uppercase;
+            font-weight: 400;
+          }
       & > *:first-child {
             margin-right: auto;
       }

@@ -10,6 +10,7 @@
     min-width: 325px;
     min-height: 323px;
 }
+
 @media screen and (width <= 768px){
 .Appartement{
     flex-basis: 100%;

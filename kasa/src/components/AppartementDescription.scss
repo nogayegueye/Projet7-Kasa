@@ -1,0 +1,27 @@
+.appartement_description {
+      p {
+            margin-block: 0;
+      }
+      .description_header {
+            background-color: #ff6060;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            i {
+                  font-size: 20px;
+                  cursor: pointer;
+            }
+      }
+      .description_content {
+            background-color: #f6f6f6;
+            color: #ff6060;
+            padding: 10px;
+            border-radius: 0 0 10px 10px;
+            position: relative;
+            top: -10px;
+            z-index: -1;
+      }
+}
