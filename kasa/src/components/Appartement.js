@@ -2,11 +2,21 @@ import React from 'react';
 import './Appartement.css';
 import { Link } from 'react-router-dom';
 
-function Appartement() {
+function Appartement(props) {
+     
       return (
-            <div className="Appartement">
-                 <Link to="/PageApp"><div className="Appartement-title">Titre de la location</div></Link> 
-            </div>
+            <Link 
+            to="/PageApp"
+            state={{
+                  AppartementId: props.id
+
+            }}
+            >
+                  <div className="Appartement">
+                        <img src={props.imageUrl} alt="image" />
+                        <div className="appartement-title">{props.title}</div>
+                  </div>
+            </Link>
       );
 }
 

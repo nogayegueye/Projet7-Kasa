@@ -1,0 +1,6 @@
+.apropos_container{
+    padding-inline: 40px ;
+    @media screen and (width <= 768px){
+        padding-inline: 0 ;
+      }
+}

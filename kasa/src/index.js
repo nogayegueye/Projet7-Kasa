@@ -1,12 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import App from './App';
 import Apropos from './pages/Apropos';
 import PageApp from './pages/PageApp';
 import PageErreure from './pages/PageErreure.js';
 import Navbar from './components/Navbar.js';
-import Footer from './components/Footer.js';
+
+
 
 const rootElement = document.getElementById('root');
 ReactDOM.createRoot(rootElement).render(
@@ -19,7 +20,6 @@ ReactDOM.createRoot(rootElement).render(
                         <Route path="/Apropos" element={<Apropos />} />
                         <Route path="*" element={<PageErreure />} />
                   </Routes>
-                  <Footer />
             </Router>
       </React.StrictMode>
 );

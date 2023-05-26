@@ -11,11 +11,13 @@
     font-size: 48px;
     background-position: center;
     background-size: cover ;
+    
 
    }
  .Banner::before{
     position: absolute;
     content: "";
     inset: 0;
-    opacity: 0.3 ;
+    filter: brightness(0.8);
+    /* opacity: 0.3 ; */
  }  

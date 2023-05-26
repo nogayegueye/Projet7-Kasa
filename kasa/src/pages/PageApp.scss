@@ -13,83 +13,8 @@
             margin-bottom: 10px;
             font-size: 20px;
       }
-      img {
-            width: 100%;
-            height: 415px;
-            object-fit: cover;
-            border-radius: 25px;
-            box-shadow: rgb(149 157 165/ 20%) 0px 8px 24px;
-      }
-      .appartement_header {
-            display: flex;
-            gap: 20px;
-            @media screen and (width <= 768px) {
-                  flex-direction: column;
-            }
-            .appartement_title {
-                  flex-grow: 1;
-            }
-            .appartement_owner{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                margin-bottom: 20px;
-                @media screen and (width <= 768px){
-                    flex-direction: row;
-                  }
-            }
-            .appartement_owner_details {
-                  display: flex;
-                  gap: 10px;
-                  @media screen and (width <= 768px){
-                    order: 1;
-                  }
-            }
-            .appartement_owner_badge {
-                  height: 45px;
-                  width: 45px;
-                  border-radius: 50%;
-                  background-color: #c4c4c4;
-            }
-            .appartement_owner_start {
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  gap: 10px;
-                  * {
-                        font-size: 30px;
-                  }
-                  .on {
-                        color: #ff6060;
-                  }
-                  .off {
-                        color: #e3e3e3;
-                  }
-            }
-            h3 {
-                  margin-block: 0;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: flex-end;
-                  font-weight: 400;
-            }
-      }
-      & .appartement_tags {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
-            gap: 20px;
-            span {
-                  background-color: #ff6060;
-                  color: white;
-                  padding: 20px;
-                  border-radius: 20px;
-                  width: 115px;
-                  height: 4px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-            }
-      }
+      
+      
       .appartement_desc-area {
             display: flex;
             gap: 100px;
@@ -97,5 +22,8 @@
                 flex-direction: column;
                 gap: 0;
               }
+      }
+      .appartement_footer{
+            height: 150px;
       }
 }
