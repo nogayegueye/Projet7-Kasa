@@ -4,10 +4,10 @@ import AppartementDescription from '../components/AppartementDescription.js';
 import Footer from '../components/Footer.js';
 import { useLocation } from 'react-router-dom';
 import Image_Banner from '../components/Image_Banner.js';
+import AppartementHeader from '../components/AppartementHeader.js';
 
 function PageApp() {
       const location = useLocation();
-      console.log('location', location);
       const [selectedPageApp, setselectedPageApp] = useState(null);
 
       useEffect(fetchAppartementData, []);
@@ -27,12 +27,12 @@ function PageApp() {
       if (selectedPageApp == null) return<div>...laoding</div>
       return (
             <div className="appartement_page">
-                  selected PageApp: {JSON.stringify(selectedPageApp)}
+                  
                   <Image_Banner imageUrl={selectedPageApp.cover} />
-                  {/* <AppartementHeader/> */}
+                  <AppartementHeader selectedPageApp={selectedPageApp}  />
                   <div className="appartement_desc-area">
-                        <AppartementDescription />
-                        <AppartementDescription />
+                        <AppartementDescription title="Description" content={selectedPageApp.description}/>
+                        <AppartementDescription title="Equipement" content={selectedPageApp.equipement}/>
                   </div>
                   <Footer />
             </div>

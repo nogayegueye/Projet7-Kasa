@@ -18,10 +18,12 @@
       .appartement_desc-area {
             display: flex;
             gap: 100px;
+            flex-basis: 50%;
             @media screen and (width <= 768px){
                 flex-direction: column;
                 gap: 0;
               }
+             
       }
       .appartement_footer{
             height: 150px;

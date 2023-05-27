@@ -1,5 +1,4 @@
 import React from 'react';
-import Test from '../pages/test.png';
 import './Image_banner.scss';
 function Image_Banner(props) {
       return (
