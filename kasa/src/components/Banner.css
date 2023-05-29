@@ -11,9 +11,13 @@
     font-size: 48px;
     background-position: center;
     background-size: cover ;
+
     
 
    }
+.Banner p{
+text-align: center;
+}
  .Banner::before{
     position: absolute;
     content: "";

@@ -32,7 +32,7 @@ function PageApp() {
                   <AppartementHeader selectedPageApp={selectedPageApp}  />
                   <div className="appartement_desc-area">
                         <AppartementDescription title="Description" content={selectedPageApp.description}/>
-                        <AppartementDescription title="Equipement" content={selectedPageApp.equipement}/>
+                        <AppartementDescription title="Equipement" content={selectedPageApp.equipments.map(eqm => <li>{eqm}</li>)}/>
                   </div>
                   <Footer />
             </div>
