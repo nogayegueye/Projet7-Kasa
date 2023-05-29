@@ -32,7 +32,8 @@ function PageApp() {
                   <AppartementHeader selectedPageApp={selectedPageApp}  />
                   <div className="appartement_desc-area">
                         <AppartementDescription title="Description" content={selectedPageApp.description}/>
-                        <AppartementDescription title="Equipement" content={selectedPageApp.equipments.map(eqm => <li>{eqm}</li>)}/>
+                        <AppartementDescription title="Equipement" content={selectedPageApp.equipments.map((eqm, index) => (
+                               <li key={index}>{eqm}</li>))}/>
                   </div>
                   <Footer />
             </div>
