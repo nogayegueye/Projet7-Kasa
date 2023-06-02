@@ -15,7 +15,7 @@ function AppartementDescription(props) {
         <i className={`fa-solid fa-chevron-${isOpen ? 'up' : 'down'}`}></i>
       </p>
       {isOpen && (
-        <p className="description_content hidden">
+        <p className="description_content">
           <span>{props.content}</span>
         </p>
       )}

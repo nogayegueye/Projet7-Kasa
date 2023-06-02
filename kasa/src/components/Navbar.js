@@ -6,11 +6,11 @@ import { NavLink } from 'react-router-dom';
 function Navbar() {
       return (
             <nav className="Navbar">
-                  <NavLink to="/">
+                  
                   <div className="Navbar-logo">
                         <img src={logo} alt="logo" />
                   </div>
-                  </NavLink>
+                  
                   <NavLink to="/">
                         <div>Accueil</div>
                   </NavLink>

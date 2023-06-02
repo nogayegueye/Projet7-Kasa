@@ -5,7 +5,8 @@
       color: #ff6060;
       font-weight: 500;
       margin: 20px 0;
-      gap: 100px;
+      
+
       @media screen and (width <= 768px) {
             text-transform: uppercase;
             font-weight: 400;
@@ -16,11 +17,22 @@
       a {
             text-decoration: none;
             color: #ff6060;
+            margin-left: 40px;
+            @media screen and (width <= 768px) {
+                  margin: 10px;
+                  font-size: 12px;
+            }
             &:hover {
                   text-decoration: underline;
             }
             &:active {
                   text-decoration: underline;
+            }
+      }
+      @media screen and (width <= 768px) {
+            .Navbar-logo img {
+                  height: 46px;
+                  
             }
       }
 }

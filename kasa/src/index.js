@@ -16,7 +16,7 @@ ReactDOM.createRoot(rootElement).render(
                   <Navbar />
                   <Routes>
                         <Route path="/" element={<App />} />
-                        <Route path="/PageApp" element={<PageApp />} />
+                        <Route path="/logement/:id" element={<PageApp />} />
                         <Route path="/Apropos" element={<Apropos />} />
                         <Route path="*" element={<PageErreure />} />
                   </Routes>

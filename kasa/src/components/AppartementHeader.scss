@@ -55,6 +55,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
     gap: 20px;
+    margin: 20px 0;
     span {
           background-color: #ff6060;
           color: white;

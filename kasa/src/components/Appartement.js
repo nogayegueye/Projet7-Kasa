@@ -3,15 +3,8 @@ import './Appartement.css';
 import { Link } from 'react-router-dom';
 
 function Appartement(props) {
-     
       return (
-            <Link 
-            to="/PageApp"
-            state={{
-                  AppartementId: props.id
-
-            }}
-            >
+            <Link to={'/logement/' + props.id}>
                   <div className="Appartement">
                         <img src={props.imageUrl} alt="image" />
                         <div className="appartement-title">{props.title}</div>

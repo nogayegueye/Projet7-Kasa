@@ -2,14 +2,14 @@ import React from 'react';
 import AppartementDescription from '../components/AppartementDescription.js';
 import './Apropos.scss';
 import Footer from '../components/Footer.js';
-import Image_Banner from '../components/Image_Banner.js';
+import Apropos_banner from '../components/apropos_banner.js';
 
 function Apropos() {
       return (
             <div>
-                  <div className='image_apropos'>
-                        <Image_Banner />
-                  </div>
+                  
+                        <Apropos_banner />
+                  
                   <div className="apropos_container">
                         <AppartementDescription
                               title="Fiabilité"

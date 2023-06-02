@@ -1,22 +1,28 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import Appartement from './Appartement.js';
 import './AppartementGrid.css';
+import logements from '../Logement.json';
 
-function AppartementGrid(){
-  const [Appartements, setAppartements] = useState([]);
+function AppartementGrid() {
+  const [appartements, setAppartements] = useState([]);
 
-  useEffect(fetchAppartements, []);
+  useEffect(() => {
+    fetchAppartements();
+  }, []);
 
   function fetchAppartements() {
-  fetch("Logement.json")
-.then((res) =>res.json())
-.then((res) =>setAppartements(res))
-.catch(console.error);
-}
+    setAppartements(logements);
+  }
+
   return (
     <div className='grid'>
-      {Appartements.map((appartement) =>(
-      <Appartement key={appartement.id} title={appartement.title} imageUrl={appartement.cover} id={appartement.id}/>
+      {appartements.map((appartement) => (
+        <Appartement
+          key={appartement.id}
+          title={appartement.title}
+          imageUrl={appartement.cover}
+          id={appartement.id}
+        />
       ))}
     </div>
   );

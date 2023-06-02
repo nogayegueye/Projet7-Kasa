@@ -29,20 +29,6 @@
             z-index: -1;
             // height: 150px;
             overflow: hidden;
-            animation: slide_in 0.3s ease;
-            &.hidden{
-                  animation: slide_out 0.3s ease;
-                  
-            }
-      }
-}
-@keyframes slide_in{
-      from{
-            transform: translateY(100%);
-      }
-}
-@keyframes slide_out{
-      to{
-            transform: translateY(100%);
+            
       }
 }

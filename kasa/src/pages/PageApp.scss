@@ -1,8 +1,6 @@
 .appartement_page {
       color: #ff6060;
-      div:first-child {
-            margin-bottom: 20px;
-      }
+      
       h1 {
             font-weight: 400;
             margin-block: 0;
@@ -18,6 +16,7 @@
       .appartement_desc-area {
             display: flex;
             gap: 100px;
+            margin-bottom: 50px;
             flex-basis: 50%;
             @media screen and (width <= 768px){
                 flex-direction: column;
