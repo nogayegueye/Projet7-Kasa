@@ -12,7 +12,7 @@ function Navbar() {
                   </div>
                   
                   <NavLink to="/">
-                        <div>Accueil</div>
+                        <div className='active'>Accueil</div>
                   </NavLink>
                   <NavLink to="/Apropos">
                         <div>A propos</div>

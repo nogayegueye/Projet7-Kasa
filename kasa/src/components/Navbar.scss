@@ -18,14 +18,18 @@
             text-decoration: none;
             color: #ff6060;
             margin-left: 40px;
-            @media screen and (width <= 768px) {
+            @media screen and (max-width: 768px) {
                   margin: 10px;
                   font-size: 12px;
             }
-            &:hover {
-                  text-decoration: underline;
-            }
-            &:active {
+             &.active{
+                  text-decoration: underline;    
+             }
+            &:active,
+            &:focus,
+            &:visited,
+            &:hover
+            {
                   text-decoration: underline;
             }
       }
