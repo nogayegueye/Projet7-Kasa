@@ -5,7 +5,7 @@ import Footer from '../components/Footer.js';
 import { useLocation, useParams } from 'react-router-dom';
 import Image_Banner from '../components/Image_Banner.js';
 import AppartementHeader from '../components/AppartementHeader.js';
-
+import PageErreur from "./PageErreure.js"
 import logements from '../Logement.json';
 
 function PageApp() {
@@ -22,10 +22,10 @@ function PageApp() {
             );
             setselectedPageApp(PageApp);
       }
-      if (selectedPageApp == null) return <div>...laoding</div>;
+      if (selectedPageApp == null) return <PageErreur/>;
       return (
             <div className="appartement_page">
-                  <Image_Banner imageUrl={selectedPageApp.cover} />
+                  <Image_Banner pictures={selectedPageApp.pictures} />
                   <AppartementHeader selectedPageApp={selectedPageApp} />
                   <div className="appartement_desc-area">
                         <AppartementDescription
